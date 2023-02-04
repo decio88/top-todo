@@ -1,6 +1,3 @@
-# template-webpack
-Boilerplate for web development with JS
-- webpack: css and asset loader, watch mode
-- ESLint and Prettier
+# Todo List project from TOP
 
-run npm install after cloning
+Created from custom webpack template with ESLint Airbnb ruleset

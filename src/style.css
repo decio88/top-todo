@@ -1,0 +1,28 @@
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  height: 20vh;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  height: 80vh;
+}
+
+.sidebar {
+  width: 30%;
+  background-color: rgb(172, 172, 172);
+}

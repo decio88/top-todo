@@ -1,3 +1,6 @@
 import Task from './task';
-import displayTaskCreation from './displayController';
-import { taskListener } from './listener';
+
+function createTask(title, description, dueDate, priority) {
+  const newTask = new Task(title, description, dueDate, priority);
+  return newTask;
+}

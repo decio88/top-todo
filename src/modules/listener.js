@@ -4,6 +4,7 @@ import {
   hidePrjCreation,
   hideTaskCreation,
 } from './displayController';
+import createTask from './createTask';
 
 function listeners() {
   function taskListener() {
@@ -18,24 +19,22 @@ function listeners() {
     });
   }
 
-  function submitTask() {
-    document.querySelector('#submit-task').addEventListener('click', () => {
-      // function to create the task from input fields
-      hideTaskCreation();
-    });
-  }
-
-  function submitPrj() {
-    document.querySelector('#submit-prj').addEventListener('click', () => {
-      // function to create project from input field
-      hidePrjCreation();
-    });
-  }
-
   taskListener();
   prjListener();
-  submitTask();
-  submitPrj();
 }
 
-export { listeners };
+function submitTask() {
+  document.querySelector('#submit-task').addEventListener('click', () => {
+    // function to create the task from input fields
+    hideTaskCreation();
+  });
+}
+
+function submitPrj() {
+  document.querySelector('#submit-prj').addEventListener('click', () => {
+    // function to create project from input field
+    hidePrjCreation();
+  });
+}
+
+export { listeners, submitPrj, submitTask };

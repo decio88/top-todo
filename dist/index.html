@@ -18,10 +18,10 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <div class="overlay hiddeng">
+    <div class="overlay hidden">
       <div id="form-container">
         <div class="card">
-          <form action="" method="post">
+          <form action="" method="post" id="task-form">
             <ul>
               <li>
                 <label class="bold" for="title">Title</label><br />
@@ -57,7 +57,7 @@
               </li>
 
               <li class="button">
-                <button type="button" id="submit">Submit</button>
+                <button type="button" id="submit-task">Submit</button>
               </li>
             </ul>
           </form>
@@ -76,6 +76,12 @@
           <div class="prj-add btn">
             <span class="material-icons"> add </span>
             <p>Add project</p>
+          </div>
+          <div class="hidden" id="prj-input">
+            <form action="" method="post">
+              <input type="text" name="prj" id="prj" />
+              <button type="button" id="submit-prj">Submit</button>
+            </form>
           </div>
         </div>
         <h1>Inbox</h1>

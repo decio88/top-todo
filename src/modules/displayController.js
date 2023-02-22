@@ -27,7 +27,7 @@ function displayTasks(task) {
   const dueDate = document.createElement('p');
   dueDate.innerHTML = task.dueDate;
   dueDate.classList.add('task-dueDate');
-  const priority = document.querySelector('p');
+  const priority = document.createElement('p');
   priority.innerHTML = task.priority;
   priority.classList.add('task-priority');
 
